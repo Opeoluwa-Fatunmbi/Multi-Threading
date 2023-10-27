@@ -8,6 +8,7 @@ urls = [
     "https://example.com/file3.zip",
 ]
 
+
 # Function to download a file from a given URL
 def download_file(url):
     try:
@@ -15,7 +16,7 @@ def download_file(url):
         if response.status_code == 200:
             # Extract the filename from the URL
             filename = url.split("/")[-1]
-            with open(filename, 'wb') as file:
+            with open(filename, "wb") as file:
                 for chunk in response.iter_content(chunk_size=1024):
                     if chunk:
                         file.write(chunk)
@@ -24,6 +25,7 @@ def download_file(url):
             print(f"Failed to download: {url}")
     except Exception as e:
         print(f"Error while downloading {url}: {str(e)}")
+
 
 # Create a thread for each URL and start downloading
 threads = []
