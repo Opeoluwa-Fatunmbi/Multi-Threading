@@ -5,7 +5,7 @@ Applications of Multi-Threading
 
 ## Description
 
-The Multi-File Downloader is a simple Python script that demonstrates how to download multiple files from specified URLs concurrently using multithreading. This script can be a helpful starting point for understanding and practicing multithreading in Python while solving a real-world problem.
+The Multi-File Downloader is a simple Python script that demonstrates how to download multiple files from specified URLs concurrently using multithreading. 
 
 ## Prerequisites
 
